@@ -1,0 +1,66 @@
+@media only screen and (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .logo {
+    margin-left: 0;
+  }
+  .hero-title {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  .hero-title > h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .hero-title > h6 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+  .about-contact {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-contact > .about {
+    width: 95%;
+    gap: 20px;
+  }
+  .about-contact > .contact {
+    width: 95%;
+  }
+  .content-caption {
+    margin-left: 0;
+    text-align: center;
+  }
+  .about-information {
+    margin-left: 0;
+  }
+  .card-title > h4 {
+    text-align: center;
+  }
+  .package-list > li {
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .package-list {
+    flex-direction: row;
+    gap: 10px ;
+    margin: 0;
+    justify-content: center;
+  }
+  .package-list > li {
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .package-list {
+    flex-direction: column;
+  }
+  .package-list > li {
+    flex-direction: row;
+  }
+}

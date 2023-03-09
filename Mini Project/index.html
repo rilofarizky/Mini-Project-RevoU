@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Agents -BLACK-</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script defer src="js/form.js"></script>
+  <script defer src="js/slider.js"></script>
+</head>
+<body>
+  <header>
+    <navbar class="container">
+      <div class="navbar">
+        <div class="logo">-BLACK-</div>
+        <div class="menu">
+          <a class="menu-item" href="#hero">Home</a>
+          <a class="menu-item" href="#package">Our Package</a>
+          <a class="menu-item" href="#call-us">Call Us</a>
+        </div>
+      </div>
+    </navbar>
+  </header>
+  <main>
+    <section id="hero">
+      <div class="container">
+        <div class="hero-title">
+          <h1>Your Trusted Travel Agents</h1>
+          <h6>Your happiness is our happiness</h6>
+        </div>
+      </div>
+    </section>
+    <section id="about-contact">
+      <div class="container">
+        <div class="about-contact">
+          <div class="about">
+            <div class="about-slider">
+              <img class="img-slider" src="assets/scene1.jpeg" alt="Scenery 1">
+              <img class="img-slider" src="assets/scene2.jpg" alt="Scenery 2">
+              <img class="img-slider" src="assets/scene3.jpg" alt="Scenery 3">
+              <img class="img-slider" src="assets/scene4.jpg" alt="Scenery 4">
+              <button onclick="plusDivs(-1)">Prev</button>
+              <button onclick="plusDivs(1)">Next</button>
+            </div>
+            <div class="about-content">
+              <div class="content-caption">
+                <p>"Liburan jadi menyenangkan bersama Travel Agents -BLACK-"</p>
+              </div>
+              <div class="content-person">
+                <img class="person-img" src="/assets/profil.JPG" alt="Foto Profil">
+                <div class="person-info">
+                  <h6>Rilo Farizky</h6>
+                  <p>Gamers, 22</p>
+                </div>
+              </div>
+            </div>
+            <hr class="border">
+            <div class="about-information">
+              <h6 class="information-title">
+                Travel Agents -BLACK- is service for climbing and booking
+                travel service. 
+              </h6>
+              <ul class="information-list">
+                <li>
+                  <div class="list-number">1</div>
+                  <p class="list-paragraf">Ground travel using car and 
+                    bus if you with family group.
+                  </p>
+                </li>
+                <li>
+                  <div class="list-number">2</div>
+                  <p class="list-paragraf">Coast travel using ferry boats
+                    with the group of tourist.
+                  </p>
+                </li>
+                <li>
+                  <div class="list-number">3</div>
+                  <p class="list-paragraf">Climbing guide with the prepared
+                    climbing equipment by us.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="contact">
+            <div class="contact-card">
+              <div class="card-title">
+                <h4>Contact Us</h4>
+                <p>Sales akan menghubungi anda 1x24 jam setelah data kami terima.</p>
+              </div>
+              <div class="card-submit">
+                <div class="success" id="success">Your Data has been Submited</div>
+                <div class="failed" id="failed">You cannot left the empty form</div>
+              </div>
+              <form name="card-content" onsubmit="return validateForm()">
+                <label class="name-label" for="name">Your Name:</label>
+                <input class="name-input" type="text" name="form-name" placeholder="First and last name">
+                <label class="emaail-label" for="email">Email:</label>
+                <input class="email-input" type="text" name="form-email" placeholder="example@gmail.com">
+                <label class="intrst-label"for="interest">What are you interested?</label>
+                <select class="intrst-input" title="interest" name="interest">
+                  <option value="Travel">Travel</option>  
+                  <option value="Climbing">Climbing</option>
+                </select>
+                <input class="submit-input" type="submit" value="Send">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="package">
+      <div class="container">
+        <div class="package-container">
+          <h1>Our Package</h1>
+        </div>
+        <ul class="package-list">
+          <li>
+            <div class="list-content" 
+            style="background: url(assets/nusaisland.jpg);
+            background-size: 350px;">
+              <div class="content-background">
+                <p>Travel to Nusa Island in Bali for beautiful Dream Beach; 
+                Mushroom Bay; and the Devil's Tears rock outcrop, with views 
+                of crashing surf erupting over the rocks.</p>
+                <h1>Bali</h1>
+              </div>
+            </div>
+            <div class="list-content" 
+            style="background: url(assets/temple.jpg);
+            background-size: 350px;">
+              <div class="content-background">
+                <p>Travel to Borobudur Temple in Yogyakarta, huge Buddhist 
+                temple is located in a gorgeous setting amidst beautiful 
+                mountains and landscape.</p><br>
+                <h1>Yogyakarta</h1>
+              </div>
+            </div>
+            <div class="list-content" 
+            style="background: url(assets/bromo.jpg);
+            background-size: 350px;">
+              <div class="content-background">
+                <p>Travel to Bromo the active volcano in Surabaya, The volcano
+                  is located in the Bromo Tengger National Park, an area 
+                  famous for its striking landscape.</p><br>
+                <h1>Surabaya</h1>
+              </div> 
+            </div>
+          </li>
+          <br>
+          <li>
+            <div class="list-content" 
+            style="background: url(assets/mtfuji.jpg);
+            background-size: 350px;">
+              <div class="content-background">
+                <p>Exclusive Travel to Mt. Fuji, the highest mountain in Japan.
+                At the base of the mountain offer resort, hot springs, and
+                camping.</p><br>
+                <h1>Japan</h1>
+              </div>
+            </div>
+            <div class="list-content" 
+            style="background: url(assets/zhangjiajie.jpg);
+            background-size: 350px;">
+              <div class="content-background">
+                <p>Exclusive Travel to Zhangjiajie for its precarious peaks, 
+                limpid streams, dense forests, large karst caves, and 
+                biodiversity. It is one of the must-see scenic areas 
+                in China.</p>
+                <h1>China</h1>
+              </div>
+            </div>
+            <div class="list-content" 
+            style="background: url(assets/stpetersburg.jpg);
+            background-size: 350px;">
+              <div class="content-background">
+                <p>Exclusive Travel to St. Petersburg a place of architectural 
+                beauty. Large parks, magnificent churches, museums, 
+                monuments and palaces adorn this city.</p>
+                <h1>Russia</h1>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <input id="call-us" type="submit" value="Call Us">
+    <div class="footer">
+      <h6>Term of Service . Privacy Policy</h6>
+      <h6>@2023 -BLACK-</h6>
+    </div>
+  </footer>
+</body>
+</html>
